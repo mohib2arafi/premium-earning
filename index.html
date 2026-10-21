@@ -390,7 +390,7 @@ const BOT_TOKEN = "8857188682:AAEkQg_q4dTYRPyDD0B8LpeP0vCF51q7gV4";
 const ADMIN_CHAT_ID = "1926751288";
 
 /* CHANGE ONLY THIS ADS PARK ZONE ID */
-const ADSPARK_ZONE_ID = "42";
+const ADSPARK_ZONE_ID = "61";
 
 // ============================================
 
@@ -497,13 +497,13 @@ alert("Referral link copied!");
 function showPage(pageId,btn){
 
 document.querySelectorAll('.page').forEach(p=>{
-p.classList.remove('active');
+ p.classList.remove('active');
 });
 
 document.getElementById(pageId).classList.add('active');
 
 document.querySelectorAll('.nav-btn').forEach(b=>{
-b.classList.remove('active-nav');
+ b.classList.remove('active-nav');
 });
 
 btn.classList.add('active-nav');
@@ -541,7 +541,6 @@ try {
   balance += 5;
   adsWatched += 1;
   saveData();
-  alert("বিজ্ঞাপন সম্পন্ন হয়েছে! ৫ পয়েন্ট যোগ হয়েছে।");
 } catch (error) {
   // No ad / ad not completed: do not grant a reward.
   alert("এই মুহূর্তে বিজ্ঞাপন পাওয়া যায়নি বা বিজ্ঞাপন সম্পন্ন হয়নি। পরে আবার চেষ্টা করুন।");
@@ -684,7 +683,7 @@ const ref = getQueryParam("startapp") || getQueryParam("start");
 
 if(ref && ref.startsWith("ref_")){
 
-const referrerId = ref.replace("ref_","");
+const referrerId = ref.replace("ref_",
 
 if(referrerId != userId){
 
